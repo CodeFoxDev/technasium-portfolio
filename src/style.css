@@ -231,7 +231,7 @@ main > div.projects > div.project > div.info > .buttons {
 main > div.technical-skills {
   position: relative;
   width: 100vw;
-  height: 44rem;
+  height: 52rem;
   isolation: isolate;
   display: flex;
   flex-direction: column;
@@ -243,11 +243,21 @@ main > div.technical-skills {
 
 main > div.technical-skills .skills {
   display: grid;
-  margin-inline: 8rem;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 32rem 32rem;
   grid-template-rows: repeat(auto, 1fr);
   place-items: center;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+main > div.technical-skills .skills > img {
+  width: 32rem;
+  border-radius: 1rem;
+}
+
+main > div.technical-skills .skills .buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 main > div.technical-skills .skills > .item {
@@ -383,6 +393,10 @@ main > div.footer > .links > a > img {
   main > div.front > div.image {
     display: none;
   }
+
+  main > div.technical-skills .skills {
+    grid-template-columns: 32rem;
+  }
 }
 
 @media screen and (max-width: 67rem) {
@@ -427,17 +441,9 @@ main > div.footer > .links > a > img {
     flex-direction: column;
     width: 100%;
   }
-
-  main > div.technical-skills .skills {
-    grid-template-columns: repeat(5, 1fr);
-  }
 }
 
 @media screen and (max-width: 647px) {
-  main > div.technical-skills .skills {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
   main > div.footer > div.logo > h1 {
     display: none;
   }
@@ -450,14 +456,6 @@ main > div.footer > .links > a > img {
 
   main > div.projects > div.project > div.info > .buttons {
     flex-direction: column;
-  }
-
-  main > div.technical-skills {
-    height: 54rem;
-  }
-
-  main > div.technical-skills .skills {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
