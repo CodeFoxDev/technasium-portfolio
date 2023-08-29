@@ -1,5 +1,5 @@
 // NOTE:
-// ALSO UPDATE FRONT GRID
+// ADD MORE PROJECTS
 
 export default {
   projects: [
