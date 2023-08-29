@@ -156,6 +156,24 @@ main > div.front > div.image {
   align-items: flex-end;
   gap: 1rem;
   flex-shrink: 0;
+  isolation: isolate;
+}
+
+main > div.front > div.image > #images-grid {
+  z-index: -1;
+}
+
+.front-image-grid {
+  --width: 0;
+  --height: 0;
+
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  opacity: .75;
+  border-radius: .8rem;
 }
 
 main > div.front > div.image > svg {
@@ -368,7 +386,15 @@ main > div.footer > .links > a > img {
   width: 100%;
 }
 
-/* Effects / media queries */ 
+#front-grid rect {
+  transition: fill .3s ease;
+}
+
+/* Effects / media queries */
+
+#front-grid rect[data-tile-has-image]:hover {
+  fill: transparent
+}
 
 .type {
   --type-duration: 1.6s;
