@@ -82,6 +82,11 @@ a.button.fill:hover {
   background: transparent;
 }
 
+.trans-text {
+  color: var(--text);
+  opacity: .75;
+}
+
 /* Progress nav */
 
 nav > .nav-progress {

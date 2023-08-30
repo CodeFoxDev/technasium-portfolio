@@ -1,4 +1,5 @@
 import config from "./site.config.js";
+//import "./spa.js";
 
 const nav = document.querySelector(".nav-progress");
 const navTop = document.querySelector(".nav-top");
