@@ -13,7 +13,7 @@ export default {
       name: "Cornettogrijper BPA",
       src: "/src/projects/shot-cornettogrijper-bpa.png",
       //info: "/projects/3.3",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "Ontwerp een grijper voor op de deltarobot om een cornetto op te pakken van een glad oppervlak (band of tafel) en weer weggelegd kan worden op een glad oppervlak.",
     },
     {
       id: "3.2",
